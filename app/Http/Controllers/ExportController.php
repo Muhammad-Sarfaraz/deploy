@@ -18,5 +18,15 @@ class ExportController extends Controller
             ])->thenReturn();
 
         return $export->action("ok");
+
+    //     return $posts = app(Pipeline::class)
+    //     ->send($export->action('sort'))
+    //     ->through([
+    //         Sort::class
+    //     ])->thenReturn();
+
+    // return $export->action("ok");
+
+        // changed this file
     }
 }
