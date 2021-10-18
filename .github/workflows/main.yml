@@ -30,8 +30,8 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
     - name: DB migration and seeding
-        php artisan migrate
-        php artisan db:seed
+      run: php artisan migrate
+      run: php artisan db:seed
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
