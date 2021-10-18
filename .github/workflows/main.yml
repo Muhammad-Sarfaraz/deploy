@@ -1,6 +1,8 @@
-name: Deploy Site on push
-on: push
-
+name: Deploy Production Branch
+on:
+  push:
+    branches:
+      - master
 jobs:
   web-deploy:
     name: Deploy
